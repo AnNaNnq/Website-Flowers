@@ -1,5 +1,8 @@
 .container-colors {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  margin: 1em 0 0 4em;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 }

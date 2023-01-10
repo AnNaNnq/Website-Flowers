@@ -5,4 +5,5 @@ export interface Color {
   name: FlowerColors;
   emotion: string;
   signification: string;
+  color: string;
 }

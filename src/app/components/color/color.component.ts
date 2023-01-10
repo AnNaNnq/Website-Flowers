@@ -8,4 +8,6 @@ import {Color} from "../../models/colors.model";
 })
 export class ColorComponent {
   @Input() color!: Color;
+
+
 }

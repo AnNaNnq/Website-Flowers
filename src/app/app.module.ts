@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CouleursComponent } from './components/couleurs/couleurs.component';
 import { ForumComponent } from './components/forum/forum.component';
 import { FleursComponent } from './components/fleurs/fleurs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FleursComponent } from './components/fleurs/fleurs.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

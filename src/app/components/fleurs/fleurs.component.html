@@ -1,5 +1,5 @@
 <p>fleurs works!</p>
 
 <p *ngFor="let flower of flowers">
-  {{flower.name}}
+  <img *ngFor="let image of flower.images" [src]="image" width="200px" />
 </p>

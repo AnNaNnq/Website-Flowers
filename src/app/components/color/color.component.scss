@@ -1,0 +1,13 @@
+/***************************** Apparance des cartes pour les couleurs  *****************************/
+.color-card {
+  width: 80%;
+  height: 12em;
+  box-shadow: #a6a4a4 4px 4px 20px;
+  transition: 0.8s;
+  margin: 1em;
+  padding: 1em;
+}
+
+.color-card:hover {
+  transform: scale(1.05);
+}

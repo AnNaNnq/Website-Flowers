@@ -17,8 +17,7 @@ export enum FlowerColors {
   PINK = 'Rose',
   PURPLE = 'Violet',
   BLACK = 'Noir',
-  BROWN = 'Marron',
-  GREY = 'Gris'
+  BROWN = 'Marron'
 }
 
 export enum FlowerSeasons {

@@ -15,6 +15,8 @@ import { CouleursComponent } from './components/couleurs/couleurs.component';
 import { ForumComponent } from './components/forum/forum.component';
 import { FleursComponent } from './components/fleurs/fleurs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatLegacyButtonModule} from "@angular/material/legacy-button";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

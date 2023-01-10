@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<nav>
+  <div class="staticItems">
+    <h1 (click)="goToMenu()"> Violets N' Roses </h1>
+    <mat-icon (click)="toggleMenu()">menu</mat-icon>
+  </div>
+  <div [class]="{'menuClosed': !displayMenu}" class="linksItems">
+    <a [routerLink]="['/fleurs']" routerLinkActive="active"> Liste de Fleurs </a>
+    <a [routerLink]="['/couleurs']" routerLinkActive="active"> Les Couleurs </a>
+    <a [routerLink]="['/evenements']" routerLinkActive="active"> Évènements </a>
+    <a [routerLink]="['/saisons']" routerLinkActive="active"> Saison </a>
+    <a [routerLink]="['/forum']" routerLinkActive="active"> Forum </a>
+    <a [routerLink]="['/e']" routerLinkActive="active"> Up & Down </a>
+  </div>
+</nav>

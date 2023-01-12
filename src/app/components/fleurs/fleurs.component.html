@@ -1,5 +1,10 @@
-<p>fleurs works!</p>
+<div id="top"></div>
 
-<p *ngFor="let flower of flowers">
-  {{flower.name}}
-</p>
+<div class="flowersList">
+  <app-fleur *ngFor="let flower of flowers" [flower]="flower"></app-fleur>
+</div>
+
+<a href="./fleurs#top" id="scroll_to_top" mat-fab>
+  <mat-icon> arrow_upward</mat-icon>
+</a>
+

@@ -1,19 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { EvenementsComponent } from './components/evenements/evenements.component';
-import { EvenementDetailComponent } from './components/evenement-detail/evenement-detail.component';
-import { SaisonsComponent } from './components/saisons/saisons.component';
-import { SaisonDetailComponent } from './components/saison-detail/saison-detail.component';
-import { FleurDetailComponent } from './components/fleur-detail/fleur-detail.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { CouleursComponent } from './components/couleurs/couleurs.component';
-import { ForumComponent } from './components/forum/forum.component';
-import { FleursComponent } from './components/fleurs/fleurs.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {NavbarComponent} from './components/navbar/navbar.component';
+import {LandingPageComponent} from './components/landing-page/landing-page.component';
+import {EvenementsComponent} from './components/evenements/evenements.component';
+import {EvenementDetailComponent} from './components/evenement-detail/evenement-detail.component';
+import {SaisonsComponent} from './components/saisons/saisons.component';
+import {SaisonDetailComponent} from './components/saison-detail/saison-detail.component';
+import {FleurDetailComponent} from './components/fleur-detail/fleur-detail.component';
+import {ContactComponent} from './components/contact/contact.component';
+import {ForumComponent} from './components/forum/forum.component';
+import {FleursComponent} from './components/fleurs/fleurs.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ColorsListComponent} from './components/colors-list/colors-list.component';
+import {ColorComponent} from './components/color/color.component';
+import {CarouselComponent} from './components/carousel/carousel.component';
+import {MatIconModule} from "@angular/material/icon";
+import {FleurComponent} from './components/fleur/fleur.component';
+import {SmallDescPipe} from './pipes/small-desc.pipe';
+import {CommentaireComponent} from './components/commentaire/commentaire.component';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -26,15 +34,24 @@ import { FleursComponent } from './components/fleurs/fleurs.component';
     SaisonDetailComponent,
     FleurDetailComponent,
     ContactComponent,
-    CouleursComponent,
     ForumComponent,
-    FleursComponent
+    FleursComponent,
+    ColorsListComponent,
+    ColorComponent,
+    CarouselComponent,
+    FleurComponent,
+    SmallDescPipe,
+    CommentaireComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

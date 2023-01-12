@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<div class="container">
+  <div class="card" *ngFor="let person of persones">
+    <img src="{{person.image}}" alt="une photo">
+    <div>
+      <h2>{{person.nom}}</h2>
+      <p><strong>Tél: </strong>{{person.tel}}</p>
+      <p><strong>Email: </strong>{{person.email}}</p>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,20 @@
+.flowersList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+app-fleur {
+  @media screen and (min-width: 768px) {
+    flex: 0 0 25%;
+  }
+  @media screen and (max-width: 768px) {
+    flex: 0 0 100%;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}

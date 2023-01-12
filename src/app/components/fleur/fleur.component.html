@@ -1,0 +1,5 @@
+<div class="card" (click)="clickCard()">
+  <img [src]="flower.images[0]"/>
+  <h2>{{ flower.name }}</h2>
+  <p>{{ flower.signification | smallDesc }}... <span class="seeMore">Voir plus</span></p>
+</div>

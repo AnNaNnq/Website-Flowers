@@ -1,5 +1,3 @@
-<p>fleurs works!</p>
-
-<p *ngFor="let flower of flowers">
-  <img *ngFor="let image of flower.images" [src]="image" width="200px" />
-</p>
+<div class="flowersList">
+  <app-fleur *ngFor="let flower of flowers" [flower]="flower"></app-fleur>
+</div>

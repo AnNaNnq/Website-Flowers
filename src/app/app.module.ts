@@ -14,34 +14,37 @@ import {ContactComponent} from './components/contact/contact.component';
 import {ForumComponent} from './components/forum/forum.component';
 import {FleursComponent} from './components/fleurs/fleurs.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatIconModule} from "@angular/material/icon";
 import {ColorsListComponent} from './components/colors-list/colors-list.component';
 import {ColorComponent} from './components/color/color.component';
-import {CarouselComponent} from "./components/carousel/carousel.component";
-import { SmallDescPipe } from './pipes/small-desc.pipe';
-import { CommentaireComponent } from './components/commentaire/commentaire.component';
+import {CarouselComponent} from './components/carousel/carousel.component';
+import {MatIconModule} from "@angular/material/icon";
+import {FleurComponent} from './components/fleur/fleur.component';
+import {SmallDescPipe} from './pipes/small-desc.pipe';
+import {CommentaireComponent} from './components/commentaire/commentaire.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        NavbarComponent,
-        LandingPageComponent,
-        EvenementsComponent,
-        EvenementDetailComponent,
-        SaisonsComponent,
-        SaisonDetailComponent,
-        FleurDetailComponent,
-        ContactComponent,
-        ForumComponent,
-        FleursComponent,
-        ColorsListComponent,
-        ColorComponent,
-        CarouselComponent
-    ],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    LandingPageComponent,
+    EvenementsComponent,
+    EvenementDetailComponent,
+    SaisonsComponent,
+    SaisonDetailComponent,
+    FleurDetailComponent,
+    ContactComponent,
+    ForumComponent,
+    FleursComponent,
+    ColorsListComponent,
+    ColorComponent,
+    CarouselComponent,
+    FleurComponent,
+    SmallDescPipe,
+    CommentaireComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     BrowserAnimationsModule,
     MatIconModule
   ],

@@ -1,4 +1,5 @@
 <div class="affichage">
+  <div (click)="goBack()">Go back</div>
   <div class="contenuGauche">
     <h1>{{ flower.name }}</h1>
     <app-carousel [images]="flower.images"></app-carousel>
@@ -15,4 +16,11 @@
       <li *ngFor="let color of flower.color">{{ color }}</li>
     </ul>
   </div>
+</div>
+<div class="commentaires">
+  <div class="commentairesHeaderLine">
+    <h2>Commentaires</h2>
+    <div class="writeCommentButton">Ecrire un commentaire</div>
+  </div>
+  <app-commentaire></app-commentaire>
 </div>

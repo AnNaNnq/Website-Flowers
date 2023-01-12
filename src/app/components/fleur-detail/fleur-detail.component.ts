@@ -17,4 +17,8 @@ export class FleurDetailComponent {
   ngOnInit(): void {
     this.flower = this.flowerService.getFlowerById(+this.route.snapshot.params['id']);
   }
+
+  goBack() {
+    window.history.back();
+  }
 }

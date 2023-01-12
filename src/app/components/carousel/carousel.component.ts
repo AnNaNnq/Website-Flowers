@@ -10,7 +10,8 @@ export class CarouselComponent {
   imageCount!: number;
   carouselIndex!: number;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.imageCount = this.images.length;
@@ -18,7 +19,7 @@ export class CarouselComponent {
   }
 
   onPreviousClicked() {
-    if(this.carouselIndex > 0) {
+    if (this.carouselIndex > 0) {
       this.carouselIndex--;
     } else {
       this.carouselIndex = this.imageCount - 1;
@@ -26,7 +27,7 @@ export class CarouselComponent {
   }
 
   onNextClicked() {
-    if(this.carouselIndex < this.imageCount - 1) {
+    if (this.carouselIndex < this.imageCount - 1) {
       this.carouselIndex++;
     } else {
       this.carouselIndex = 0;

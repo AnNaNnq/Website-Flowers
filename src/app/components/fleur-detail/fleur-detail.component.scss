@@ -26,3 +26,40 @@
     padding-left: 1em;
   }
 }
+
+.commentairesHeaderLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & h2 {
+    margin: 0;
+  }
+
+  & .writeCommentButton {
+    padding: 0.5rem 1rem;
+    border-radius: 50rem;
+    color: white;
+    cursor: pointer;
+    background-color: #0080d7;
+    transition-duration: 0.5s;
+
+    &:hover {
+      background-color: #0094f6;
+    }
+  }
+}
+
+.commentaires {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & app-commentaire {
+    width: 100%;
+  }
+}

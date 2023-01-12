@@ -12,28 +12,92 @@ export class FlowersService {
     this.flowers = [
       {
         id: 1,
-        name: 'Rose',
-        signification: 'A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over a hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa. Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.',
-        color: [FlowerColors.RED],
-        images: ['https://www.reneveyrat.fr/629-large_default2x/roses-a-l-unite-royale.jpg', 'https://www.gartencenter-shop24.de/media/image/00/c5/3c/rose-ulmer-muenster555993624c374_600x600.jpg'],
+        name: "L'Alstroméria",
+        signification: "Associé au respect et à la gratitude, il est idéal à offrir. On aime également le retrouver dans un bouquet de mariée ou des compositions champêtres. L’alstroemeria symbolise l’amitié , ce qui le rend idéal à offrir pour célébrer une belle amitié. Chacun des six pétales représentent une caractéristique : compréhension, humour, patience, compassion, action et respect. À vous donc de choisir celle(s) que vous attribuez à l’amitié que vous célébrez.",
+        color: [FlowerColors.YELLOW, FlowerColors.ORANGE],
+        images: ["../../../assets/flowers/alstromeria/alstromeria.jpg", "../../../assets/flowers/alstromeria/alstromeria2.jpg", "../../../assets/flowers/alstromeria/alstromeria3.jpg"],
         saison: [FlowerSeasons.SUMMER]
       },
       {
         id: 2,
-        name: 'Tulipe',
-        signification: 'The tulip is a Eurasian and North African genus of perennial, bulbous plants in the lily family. It is a herbaceous perennial, growing to between 20 and 50 cm (8 and 20 in) tall, rarely to 70 cm (28 in), and bears a flower with a large, brightly coloured cup-shaped corolla. The tulip is a spring-blooming perennial plant, but cultivars exist with double flowers that bloom in late summer or early autumn. The tulip is a herbaceous perennial, growing to between 20 and 50 cm (8 and 20 in) tall, rarely to 70 cm (28 in), and bears a flower with a large, brightly coloured cup-shaped corolla. The tulip is a spring-blooming perennial plant, but cultivars exist with double flowers that bloom in late summer or early autumn.',
-        color: [FlowerColors.RED, FlowerColors.YELLOW, FlowerColors.ORANGE, FlowerColors.PINK, FlowerColors.PURPLE],
-        images: ['https://www.francefleurs.com/12342-thickbox_default/tulipe-blanche-10-tiges.jpg', 'https://www.francefleurs.com/13492-large_default/tulipe-orange-10-tiges.jpg'],
-        saison: [FlowerSeasons.SUMMER]
+        name: "L'Amaryllis",
+        signification: "La légende veut que l'amaryllis - cette étonnante fleur rouge que nous associons maintenant aux fêtes - fut initialement une nymphe timide et réservée. Amaryllis tomba follement amoureuse d'Alteo, un berger ayant la force d'Hercule et la beauté d'Apollon, mais qui ne l'aimait pas. Espérant qu'elle réussirait à gagner son amour en lui procurant la chose qu'il désirait le plus - une fleur si unique qu'elle n'avait jamais existé auparavant dans le monde - Amaryllis demanda conseil à l'oracle de Delphes. Suivant les instructions de l'oracle, Amaryllis se vêtit entièrement de blanc comme une jeune fille et apparut à la porte d'Alteo pendant 30 nuits, perçant à chaque fois son cœur d'une flèche d'or. Quand Alteo ouvrit enfin sa porte, il trouva devant lui une fleur d'un pourpre magnifique, jaillie du sang du cœur d'Amaryllis. Pourvue de ce mythe romantique - bien que tragique - il n'est pas étonnant que l'amaryllis symbolise aujourd'hui la fierté, la détermination et la beauté rayonnante.",
+        color: [FlowerColors.RED],
+        images: ["../../../assets/flowers/amaryllis/amaryllis.jpg", "../../../assets/flowers/amaryllis/amaryllis2.jpg", "../../../assets/flowers/amaryllis/amaryllis3.jpg"],
+        saison: [FlowerSeasons.WINTER]
       },
       {
         id: 3,
-        name: 'Pivoine',
-        signification: 'The peony, or paeony, is a flowering plant in the genus Paeonia, the only genus in the family Paeoniaceae. It is native to Asia, Europe, and western North America, where it occurs in moist woods and on stream banks. The peony is a perennial plant, growing to 1–1.5 m (3.3–4.9 ft) tall, with large, showy flowers. The flowers are usually large, ranging from 5 to 30 cm (2.0 to 11.8 in) in diameter, and are usually double or semi-double. They are produced in early spring, before the leaves appear. The flowers are usually large, ranging from 5 to 30 cm (2.0 to 11.8 in) in diameter, and are usually double or semi-double. They are produced in early spring, before the leaves appear.',
-        color: [FlowerColors.RED, FlowerColors.PINK, FlowerColors.PURPLE],
-        images: ['https://cdn.florajet.com/design/v32/blog/26.jpg', 'https://kioskafleurs.fr/wp-content/uploads/2020/05/pivoine-kiosk-a-fleurs-toulouse-vente-en-ligne-scaled.jpg'],
+        name: "L'Anémone",
+        signification: "Le nom «anémone» vient du mot «fleur du vent» en grec. Selon la mythologie grecque, l'anémone naquit des larmes d'Aphrodite alors que celle-ci pleurait la mort d'Adonis. On pense qu'elle porte chance et qu'elle protège du mal, et la légende dit que quand l'anémone se ferme, c'est un signal qu'il va pleuvoir. De par son étymologie grecque, l’anémone signifie « ne m’abandonnez pas ». Elle reflète la persévérance, la confiance, l’amour intense et la tendre affection. Elle est idéale à offrir pour déclarer son amour !",
+        color: [FlowerColors.PURPLE],
+        images: ["../../../assets/flowers/anemone/anemone.jpg", "../../../assets/flowers/anemone/anemone2.jpg", "../../../assets/flowers/anemone/anemone3.jpg",],
+        saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN]
+      },
+      {
+        id: 4,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
         saison: [FlowerSeasons.SUMMER]
-      }
+      },
+      {
+        id: 5,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 2,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 6,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 7,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 8,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 9,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
+      {
+        id: 10,
+        name: "",
+        signification: "",
+        color: [FlowerColors.RED],
+        images: ["", ""],
+        saison: [FlowerSeasons.SUMMER]
+      },
     ]
   }
 
@@ -43,7 +107,7 @@ export class FlowersService {
 
   getFlowerById(id: number): Flower {
     let flower: Flower = this.flowers.find(flower => flower.id === id)!;
-    if(!flower) {
+    if (!flower) {
       throw new Error('Flower not found');
     }
     return flower;

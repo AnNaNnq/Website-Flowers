@@ -17,26 +17,31 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {ColorsListComponent} from './components/colors-list/colors-list.component';
 import {ColorComponent} from './components/color/color.component';
+import {CarouselComponent} from "./components/carousel/carousel.component";
+import { SmallDescPipe } from './pipes/small-desc.pipe';
+import { CommentaireComponent } from './components/commentaire/commentaire.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    LandingPageComponent,
-    EvenementsComponent,
-    EvenementDetailComponent,
-    SaisonsComponent,
-    SaisonDetailComponent,
-    FleurDetailComponent,
-    ContactComponent,
-    ForumComponent,
-    FleursComponent,
-    ColorsListComponent,
-    ColorComponent
-  ],
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        LandingPageComponent,
+        EvenementsComponent,
+        EvenementDetailComponent,
+        SaisonsComponent,
+        SaisonDetailComponent,
+        FleurDetailComponent,
+        ContactComponent,
+        ForumComponent,
+        FleursComponent,
+        ColorsListComponent,
+        ColorComponent,
+        CarouselComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserAnimationsModule,
     MatIconModule
   ],

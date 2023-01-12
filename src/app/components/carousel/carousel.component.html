@@ -1,0 +1,8 @@
+<div class="carousel">
+  <img [src]="images[carouselIndex]"/>
+  <div class="controls">
+    <div class="goPrevious" (click)="onPreviousClicked()"><mat-icon>keyboard_arrow_left</mat-icon></div>
+    <div class="pageCount">{{ carouselIndex + 1 }}/{{ imageCount }}</div>
+    <div class="goNext" (click)="onNextClicked()"><mat-icon>keyboard_arrow_right</mat-icon></div>
+  </div>
+</div>

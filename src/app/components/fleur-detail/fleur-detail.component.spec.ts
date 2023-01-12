@@ -10,7 +10,7 @@ describe('FleurDetailComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ FleurDetailComponent ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FleurDetailComponent);
     component = fixture.componentInstance;

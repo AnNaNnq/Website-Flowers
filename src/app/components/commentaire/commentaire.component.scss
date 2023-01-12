@@ -1,6 +1,6 @@
 .card {
   width: 80%;
-  border: #999 solid 3px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   border-radius: 0.5em;
   margin: 1em;
   padding: 0.5em;
@@ -28,10 +28,10 @@
 
   & hr {
     width: 90%;
-    border-top: 1px solid #999;
+    border-top: 1px solid #e0e0e0;
     border-bottom: 0;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
+    border-left: 0;
+    border-right: 0;
   }
 }
 

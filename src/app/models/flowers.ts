@@ -1,3 +1,4 @@
+import {Comment} from "./comments";
 export interface Flower {
   id: number;
   name: string;
@@ -5,6 +6,7 @@ export interface Flower {
   signification: string;
   images: string[];
   saison: FlowerSeasons[];
+  comments: Comment[];
 }
 
 export enum FlowerColors {

@@ -1,6 +1,6 @@
 <div class="affichage">
-  <div (click)="goBack()">Go back</div>
   <div class="contenuGauche">
+    <div class="back" (click)="goBack()">← Retour</div>
     <h1>{{ flower.name }}</h1>
     <app-carousel [images]="flower.images"></app-carousel>
   </div>
@@ -18,9 +18,18 @@
   </div>
 </div>
 <div class="commentaires">
+  <hr/>
   <div class="commentairesHeaderLine">
     <h2>Commentaires</h2>
-    <div class="writeCommentButton">Ecrire un commentaire</div>
+    <div class="writeCommentButton" *ngIf="!writeCommentSectionOpen" (click)="toggleWriteCommentSection()">Ecrire un commentaire</div>
+    <div class="writeCommentButton" *ngIf="writeCommentSectionOpen" (click)="toggleWriteCommentSection()">Cacher le formulaire</div>
   </div>
-  <app-commentaire></app-commentaire>
+  <div class="commentForm" *ngIf="writeCommentSectionOpen">
+    <input type="text" placeholder="Votre nom" #name />
+    <textarea type="text" placeholder="Votre commentaire" rows="3" #comment></textarea>
+    <button (click)="addComment(flower.id, name.value, comment.value)">Envoyer</button>
+    <hr/>
+  </div>
+  <app-commentaire *ngFor="let comment of flower.comments" [name]="comment.name" [comment]="comment.comment" [date]="comment.date"></app-commentaire>
+  <h3 class="noComment" *ngIf="flower.comments.length == 0">Il n'y a pas encore de commentaire pour cette fleur.</h3>
 </div>

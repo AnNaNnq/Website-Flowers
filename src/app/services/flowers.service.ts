@@ -170,6 +170,38 @@ export class FlowersService {
         images: ["../../../assets/flowers/lisianthus/lisianthus.jpg", "../../../assets/flowers/lisianthus/lisianthus2.jpg", "../../../assets/flowers/lisianthus/lisianthus3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER]
       },
+      {
+        id: 21,
+        name: "L'Orchidée",
+        signification: "La plus convoitée des plantes ornementales, l'orchidée délicate, exotique et gracieuse représente l'amour, le luxe, la beauté et la force. Dans la Grèce antique, les orchidées étaient associées à la virilité. En fait, les femmes grecques croyaient que si le père de leur enfant à naître mangeait de grands et nouveaux tubercules d’orchidées, le bébé serait un garçon. Si la mère mangeait les petits tubercules d'orchidée, elle donnerait naissance à une fille. Pendant l'ère victorienne, le symbolisme d'orchidées s'est déplacé vers le luxe, et aujourd'hui, ce sens de la magnificence et de la splendeur artistique se poursuit, avec les orchidées représentant la beauté rare et délicate. La fleur du 14e anniversaire de mariage, l'orchidée rose traduit l'affection pure, et la populaire orchidée cattleya représente le charme mûr.",
+        color: [FlowerColors.BLUE, FlowerColors.PINK, FlowerColors.YELLOW, FlowerColors.WHITE],
+        images: ["../../../assets/flowers/orchidee/orchidee.jpg", "../../../assets/flowers/orchidee/orchidee2.jpg", "../../../assets/flowers/orchidee/orchidee3.jpg"],
+        saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN]
+      },
+      {
+        id: 22,
+        name: "La Pivoine",
+        signification: "Avec une histoire qui remonte à des milliers d'années, il n'est pas étonnant que même la mythologie contienne plusieurs versions sur l'origine de la pivoine. La légende veut que la pivoine soit nommée d'après Péon, médecin des dieux, qui reçut de la mère d'Apollon la fleur sur le mont Olympe. Une autre légende raconte l'histoire de ce même médecin qui fut «sauvé» de la mort réservée aux autres mortels en étant transformé en fleur de pivoine. Symbole floral traditionnel de la Chine, fleur de l'état de l'Indiana et fleur du 12e anniversaire de mariage, la pivoine est connue comme la fleur de la richesse et de l'honneur. Avec leur apparence luxuriante, pleine et ronde, les pivoines incarnent le romantisme et la prospérité et sont considérées comme un présage de bonne fortune et de mariage heureux.",
+        color: [FlowerColors.RED, FlowerColors.PINK, FlowerColors.YELLOW],
+        images: ["../../../assets/flowers/pivoine/pivoine.jpg", "../../../assets/flowers/pivoine/pivoine2.jpg", "../../../assets/flowers/pivoine/pivoine3.jpg"],
+        saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER]
+      },
+      {
+        id: 23,
+        name: "La Poinsettia",
+        signification: "En outre connu pendant que Noël tiennent le premier rôle et la fleur de Noël, il a indiqué qu'association de poinsettias la' avec Noël vient d'une légende mexicaine. L'histoire raconte qu'un enfant, qui n'avait pas les moyens d'offrir un plus gros cadeau, a ramassé de mauvaises herbes sur le côté de la route pour les déposer sur l'autel de l'église la veille de Noël. La congrégation a alors été témoin d'un miracle de Noël, les mauvaises herbes se sont transformées en fleurs brillantes rouges et vertes. Considéré comme un symbole de pureté par les Aztèques, dans le langage des fleurs actuel, les poinsettias rouges, blancs ou roses, la fleur de naissance du mois de décembre, symbolisent la bonne humeur et le succès; ils sont censés apporter des vœux de joie et de célébration.",
+        color: [FlowerColors.RED, FlowerColors.WHITE],
+        images: ["../../../assets/flowers/poinsettia/poinsettia.jpg", "../../../assets/flowers/poinsettia/poinsettia2.jpg", "../../../assets/flowers/poinsettia/poinsettia3.jpg"],
+        saison: [FlowerSeasons.AUTUMN, FlowerSeasons.WINTER]
+      },
+      {
+        id: 24,
+        name: "La Protée",
+        signification: "Parmi les plus anciennes familles de fleurs sur la terre, remontant à 300 millions d'années, la légende grecque raconte que le protea a été nommé d'après Proteus, le fils de Poséidon. Dieu de la mer qui avait le pouvoir de connaître toutes les choses passées, présentes et futures, Proteus se méfia et préféra faire une sieste sur l'île de Pharos plutôt que de faire des prophéties. Afin de dissuader ceux qui cherchaient ses services, il changeait de forme à volonté et l'on dit que la fleur de protée a été nommée pour lui parce qu'elle se présente elle aussi sous une variété étonnante de formes, de tailles, de couleurs et de textures constituant plus de 1 400 variétés. Avec ses associations mythologiques liées au changement et à la transformation, il n'est pas surprenant que, dans le langage des fleurs, le protea symbolise la diversité et le courage.",
+        color: [FlowerColors.PINK, FlowerColors.WHITE],
+        images: ["../../../assets/flowers/protea/protea.jpg", "../../../assets/flowers/protea/protea2.jpg", "../../../assets/flowers/protea/protea3.jpg"],
+        saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN]
+      },
     ]
   }
 

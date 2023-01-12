@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column
+  }
+}
+
+.card{
+  box-shadow: lightgray 4px 4px 20px;
+  width: max-content;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}

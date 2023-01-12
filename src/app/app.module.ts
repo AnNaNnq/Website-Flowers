@@ -21,6 +21,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {FleurComponent} from './components/fleur/fleur.component';
 import {SmallDescPipe} from './pipes/small-desc.pipe';
 import {CommentaireComponent} from './components/commentaire/commentaire.component';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -42,12 +43,13 @@ import {CommentaireComponent} from './components/commentaire/commentaire.compone
     SmallDescPipe,
     CommentaireComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatIconModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatIconModule,
+        MatButtonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

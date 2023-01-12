@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {FlowersService} from "../../services/flowers.service";
 import {Flower} from "../../models/flowers";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-fleurs',
@@ -9,8 +10,10 @@ import {Flower} from "../../models/flowers";
 })
 export class FleursComponent {
   flowers!: Flower[];
+  router!: Router;
 
-  constructor(flowerServices: FlowersService) {
+  constructor(flowerServices: FlowersService, router: Router) {
     this.flowers = flowerServices.getFlowers();
+    this.router = router;
   }
 }

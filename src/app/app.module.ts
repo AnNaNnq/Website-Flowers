@@ -25,6 +25,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import { SearchComponent } from './components/search/search.component';
 import {FormsModule} from "@angular/forms";
+import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and-down-widget.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import {FormsModule} from "@angular/forms";
     SmallDescPipe,
     CommentaireComponent,
     SearchComponent,
+    UpAndDownWidgetComponent,
   ],
     imports: [
         BrowserModule,

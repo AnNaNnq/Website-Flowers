@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FlowersService} from "../../services/flowers.service";
+import {Flower} from "../../models/flowers";
 
 @Component({
   selector: 'app-saisons',

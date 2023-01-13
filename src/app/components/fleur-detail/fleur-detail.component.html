@@ -1,8 +1,9 @@
+<div class="back" (click)="goBack()">← Retour</div>
 <div class="affichage">
   <div class="contenuGauche">
-    <div class="back" (click)="goBack()">← Retour</div>
-    <h1>{{ flower.name }}</h1>
+    <h1 class="flowerName">{{ flower.name }}</h1>
     <app-carousel [images]="flower.images"></app-carousel>
+    <app-up-and-down-widget [flower]="flower"></app-up-and-down-widget>
   </div>
   <div class="contenuDroite">
     <h2>Signification</h2>

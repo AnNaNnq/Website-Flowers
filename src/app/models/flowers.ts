@@ -7,6 +7,8 @@ export interface Flower {
   images: string[];
   saison: FlowerSeasons[];
   comments: Comment[];
+  note: number;
+  voteUtilisateur?: number;
 }
 
 export enum FlowerColors {

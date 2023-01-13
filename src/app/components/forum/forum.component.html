@@ -1,1 +1,27 @@
-<p> gak </p>
+<div class="container-formulaire">
+  <div class="carte-formulaire">
+    <h2> Votre Commentaire </h2>
+    <form [formGroup]="nouveauCommentaireFormulaire">
+
+      <div class="donnee-formulaire">
+        <input id="name" placeholder="Votre nom" type="text" formControlName="name">
+      </div>
+
+      <div class="donnee-formulaire">
+        <textarea id="comment" placeholder="Votre commentaire" type="text" formControlName="comment" rows="3"> </textarea>
+      </div>
+
+      <div *ngIf="nouveauCommentaireFormulaire.invalid">
+        <span class="message-erreur"> Veuillez compléter tous les champs.</span>
+      </div>
+      <div>
+        <button type="submit" (click)="onSubmitForm()" [disabled]="nouveauCommentaireFormulaire.invalid"> Envoyer le commentaire
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container-commentaires">
+    <app-commentaire *ngFor="let comment of comments" [name]="comment.name" [comment]="comment.comment" [date]="comment.date"></app-commentaire>
+  </div>
+</div>

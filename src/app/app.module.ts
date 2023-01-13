@@ -24,7 +24,7 @@ import {CommentaireComponent} from './components/commentaire/commentaire.compone
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import { SearchComponent } from './components/search/search.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and-down-widget.component';
 
 @NgModule({
@@ -49,15 +49,16 @@ import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and
     SearchComponent,
     UpAndDownWidgetComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatIconModule,
-        MatButtonModule,
-        MatInputModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

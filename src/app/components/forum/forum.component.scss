@@ -1,0 +1,62 @@
+/***************************** Afficher les 2 l'un à côté de l'autre *****************************/
+.container-formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 0 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+  }
+}
+
+.container-commentaires {
+  width: 69%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+/***************************** Donner une jolie apparance au formulaire *****************************/
+.carte-formulaire {
+  box-sizing: border-box;
+  width: 30%;
+  height: 10%;
+  margin: 5px;
+  padding: 10px 30px;
+  box-shadow: #b6b5b5 4px 4px 20px;
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
+}
+
+h2 {
+  font-size: 2.3em;
+  margin: 10px 0 0 12px;
+}
+
+/***************************** Organiser les champs d'entrée de l'utilisateur *****************************/
+.donnee-formulaire {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/***************************** Donner une jolie apparance au bouton *****************************/
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+  border: none;
+}
+
+/***************************** Donner une jolie apparance au message d'erreur *****************************/
+.message-erreur {
+  color: darkgreen;
+  font-style: italic;
+}
+

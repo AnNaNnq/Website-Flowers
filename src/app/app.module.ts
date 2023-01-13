@@ -22,6 +22,7 @@ import {FleurComponent} from './components/fleur/fleur.component';
 import {SmallDescPipe} from './pipes/small-desc.pipe';
 import {CommentaireComponent} from './components/commentaire/commentaire.component';
 import {MatButtonModule} from "@angular/material/button";
+import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and-down-widget.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {MatButtonModule} from "@angular/material/button";
     FleurComponent,
     SmallDescPipe,
     CommentaireComponent,
+    UpAndDownWidgetComponent,
   ],
     imports: [
         BrowserModule,

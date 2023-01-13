@@ -17,23 +17,30 @@ export class FlowersService {
         color: [FlowerColors.YELLOW, FlowerColors.ORANGE],
         images: ["../../../assets/flowers/alstromeria/alstromeria.jpg", "../../../assets/flowers/alstromeria/alstromeria2.jpg", "../../../assets/flowers/alstromeria/alstromeria3.jpg"],
         saison: [FlowerSeasons.SUMMER],
+        note: 0,
         comments: [{
           id: 1,
           name: "Marie",
           comment: "J'adore cette fleur, elle est magnifique !",
-          date: new Date()
+          date: new Date("2022-06-01")
         },
           {
             id: 3,
             name: "Jean",
             comment: "Je suis d'accord avec toi, elle est vraiment belle !",
-            date: new Date()
+            date: new Date("2022-06-03")
           },
           {
             id: 4,
             name: "Anna",
             comment: "C'est une de mes fleurs préférées !",
-            date: new Date()
+            date: new Date("2022-08-24")
+          },
+          {
+            id: 5,
+            name: "Marc Petitdemange",
+            comment: "Je ne suis pas d'accord avec vous, je trouve qu'elle est moche !",
+            date: new Date("2022-08-28")
           }]
       },
       {
@@ -43,7 +50,15 @@ export class FlowersService {
         color: [FlowerColors.RED],
         images: ["../../../assets/flowers/amaryllis/amaryllis.jpg", "../../../assets/flowers/amaryllis/amaryllis2.jpg", "../../../assets/flowers/amaryllis/amaryllis3.jpg"],
         saison: [FlowerSeasons.WINTER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Meredith Grey",
+            comment: "J'ai déjà fait des points de suture sur cette fleur, elle est vraiment belle !",
+            date: new Date("2022-12-01")
+          }
+        ]
       },
       {
         id: 3,
@@ -52,7 +67,21 @@ export class FlowersService {
         color: [FlowerColors.PURPLE],
         images: ["../../../assets/flowers/anemone/anemone.jpg", "../../../assets/flowers/anemone/anemone2.jpg", "../../../assets/flowers/anemone/anemone3.jpg",],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "R2D2",
+            comment: "Bip Boop Bop !",
+            date: new Date("2022-04-08")
+          },
+          {
+            id: 2,
+            name: "C3PO",
+            comment: "Je suis d'accord avec toi, elle est vraiment belle !",
+            date: new Date("2022-04-08")
+          }
+        ]
       },
       {
         id: 4,
@@ -61,7 +90,13 @@ export class FlowersService {
         color: [FlowerColors.RED],
         images: ["../../../assets/flowers/anthurium/anthurium.jpg", "../../../assets/flowers/anthurium/anthurium2.jpg", "../../../assets/flowers/anthurium/anthurium3.jpg"],
         saison: [FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [{
+          id: 1,
+          name: "Tyler Durden",
+          comment: "La premère règle du Fight Club est : vous ne parlez pas de L'Anthurium.",
+          date: new Date("2022-08-08")
+        }]
       },
       {
         id: 5,
@@ -70,7 +105,13 @@ export class FlowersService {
         color: [FlowerColors.PURPLE],
         images: ["../../../assets/flowers/aster/aster.jpg", "../../../assets/flowers/aster/aster2.jpg", "../../../assets/flowers/aster/aster3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [{
+          id: 1,
+          name: "Rambo",
+          comment: "Quand je vais dans la jungle, je vais toujours avec des fleurs d'aster, elles me protègent des serpents !",
+          date: new Date("1988-07-14")
+        }]
       },
       {
         id: 6,
@@ -79,11 +120,12 @@ export class FlowersService {
         color: [FlowerColors.ORANGE, FlowerColors.BLUE],
         images: ["../../../assets/flowers/oiseau_paradis/oiseau_paradis.jpg", "../../../assets/flowers/oiseau_paradis/oiseau_paradis2.jpg", "../../../assets/flowers/oiseau_paradis/oiseau_paradis3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN, FlowerSeasons.WINTER],
+        note: 0,
         comments: [{
           id: 1,
-          name: "Jean",
-          comment: "J'adore cette fleur !",
-          date: new Date()
+          name: "Marc Petitdemange",
+          comment: "C'est l'une des plus belles fleurs que j'ai jamais vu !",
+          date: new Date("2022-04-08")
         }]
       },
       {
@@ -93,7 +135,15 @@ export class FlowersService {
         color: [FlowerColors.RED, FlowerColors.WHITE, FlowerColors.PINK],
         images: ["../../../assets/flowers/bouvardia/bouvardia.jpg", "../../../assets/flowers/bouvardia/bouvardia2.jpg", "../../../assets/flowers/bouvardia/bouvardia3.jpg"],
         saison: [FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Louis XIV",
+            comment: "Dans mon royaume, je veux que l'on en plante partout !",
+            date: new Date("1700-11-06")
+          }
+        ]
       },
       {
         id: 8,
@@ -102,7 +152,13 @@ export class FlowersService {
         color: [FlowerColors.PINK, FlowerColors.WHITE],
         images: ["../../../assets/flowers/oeillet/oeillet.jpg", "../../../assets/flowers/oeillet/oeillet2.jpg", "../../../assets/flowers/oeillet/oeillet3.jpg"],
         saison: [FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [{
+          id: 1,
+          name: "Donald Trump",
+          comment: "Oh my god, I will send this flower to Kim Jong Un !",
+          date: new Date("2021-01-08")
+        }]
       },
       {
         id: 9,
@@ -111,7 +167,15 @@ export class FlowersService {
         color: [FlowerColors.RED, FlowerColors.ORANGE, FlowerColors.PINK, FlowerColors.YELLOW],
         images: ["../../../assets/flowers/chrysantheme/chrysantheme.jpg", "../../../assets/flowers/chrysantheme/chrysantheme2.jpg", "../../../assets/flowers/chrysantheme/chrysantheme3.jpg"],
         saison: [FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Tony Stark",
+            comment: "J'ai souvent vu des chrysanthèmes dans les films, mais je ne savais pas qu'ils avaient une signification aussi importante !",
+            date: new Date("2021-06-08")
+          }
+        ]
       },
       {
         id: 10,
@@ -120,7 +184,15 @@ export class FlowersService {
         color: [FlowerColors.YELLOW],
         images: ["../../../assets/flowers/jonquille/jonquille.jpg", "../../../assets/flowers/jonquille/jonquille2.jpg", "../../../assets/flowers/jonquille/jonquille3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Jean Claude Van Damme",
+            comment: "J'aime cette fleur, elle adore l'eau, dans 20 ou 30 ans, y en aura plus !",
+            date: new Date("2021-06-08")
+          }
+        ]
       },
       {
         id: 11,
@@ -129,7 +201,21 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PURPLE, FlowerColors.PINK],
         images: ["../../../assets/flowers/delphinium/delphinium.jpg", "../../../assets/flowers/delphinium/delphinium2.jpg", "../../../assets/flowers/delphinium/delphinium3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Mickael de Paris",
+            comment: "J'adore les delphinium, ils sont tellement beaux !",
+            date: new Date("2021-12-25")
+          },
+          {
+            id: 2,
+            name: "Kim Jong Un",
+            comment: "Dans mon pays, vous êtes condamné à mort pour avoir écrit un commentaire aussi stupide !",
+            date: new Date("2021-12-26")
+          }
+        ]
       },
       {
         id: 12,
@@ -138,7 +224,15 @@ export class FlowersService {
         color: [FlowerColors.YELLOW, FlowerColors.WHITE, FlowerColors.PURPLE, FlowerColors.RED, FlowerColors.PINK],
         images: ["../../../assets/flowers/freesia/freesia.jpg", "../../../assets/flowers/freesia/freesia2.jpg", "../../../assets/flowers/freesia/freesia3.jpg"],
         saison: [FlowerSeasons.WINTER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Michael Jackson",
+            comment: "Oh my god, that's a freesia!",
+            date: new Date("2010-12-09")
+          }
+        ]
       },
       {
         id: 13,
@@ -147,7 +241,27 @@ export class FlowersService {
         color: [FlowerColors.YELLOW, FlowerColors.WHITE, FlowerColors.PURPLE, FlowerColors.RED, FlowerColors.PINK],
         images: ["../../../assets/flowers/glaieul/glaieul.jpg", "../../../assets/flowers/glaieul/glaieul2.jpg", "../../../assets/flowers/glaieul/glaieul3.jpg"],
         saison: [FlowerSeasons.AUTUMN, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Brigitte Macron",
+            comment: "J'adore les glaïeuls, ils sont magnifiques et ils sentent bon! J'en ai plein à l'Elysée!",
+            date: new Date("2022-04-04")
+          },
+          {
+            id: 2,
+            name: "Emmanuel Macron",
+            comment: "Mais dis donc Brigitte, tu ne vas pas nous faire croire que tu aimes les glaïeuls, c'est une fleur de pauvre!",
+            date: new Date("2022-04-05")
+          },
+          {
+            id: 3,
+            name: "Brigitte Macron",
+            comment: "Mais non, je t'assure que j'aime les glaïeuls, ils sont magnifiques!",
+            date: new Date("2022-04-06")
+          }
+        ]
       },
       {
         id: 14,
@@ -156,7 +270,33 @@ export class FlowersService {
         color: [FlowerColors.PINK],
         images: ["../../../assets/flowers/bruyere/bruyere.jpg", "../../../assets/flowers/bruyere/bruyere2.jpg", "../../../assets/flowers/bruyere/bruyere3.jpg"],
         saison: [FlowerSeasons.WINTER, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Jeanne d'Arc",
+            comment: "J'adore les bruyères, elles sont magnifiques et elles sentent bon! J'en ai plein à Rouen!",
+            date: new Date("1429-05-30")
+          },
+          {
+            id: 2,
+            name: "Charles VII",
+            comment: "Sorcière va! Tu vas te faire brûler!",
+            date: new Date("1429-05-31")
+          },
+          {
+            id: 3,
+            name: "Jeanne d'Arc",
+            comment: "Mais pourquoi? Je n'ai rien fait de mal!",
+            date: new Date("1429-06-01")
+          },
+          {
+            id: 4,
+            name: "Charles VII",
+            comment: "Tu as dit que les bruyères étaient magnifiques et qu'elles sentaient bon! C'est une fleur de sorcière!",
+            date: new Date("1429-06-02")
+          },
+        ]
       },
       {
         id: 15,
@@ -165,7 +305,15 @@ export class FlowersService {
         color: [FlowerColors.YELLOW, FlowerColors.WHITE, FlowerColors.PURPLE, FlowerColors.RED, FlowerColors.PINK],
         images: ["../../../assets/flowers/jacinthe/jacinthe.jpg", "../../../assets/flowers/jacinthe/jacinthe2.jpg", "../../../assets/flowers/jacinthe/jacinthe3.jpg"],
         saison: [FlowerSeasons.SPRING],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Angela Merkel",
+            comment: "Ich liebe die Hyazinthe, die sind mein Lieblingsblume!",
+            date: new Date("2021-03-30")
+          }
+        ]
       },
       {
         id: 16,
@@ -174,7 +322,15 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PINK],
         images: ["../../../assets/flowers/hydrangeas/hydrangeas.jpg", "../../../assets/flowers/hydrangeas/hydrangeas2.jpg", "../../../assets/flowers/hydrangeas/hydrangeas3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Mme de Sévigné",
+            comment: "A Paris, les hydrangées sont très populaires. Je dirai même qu'elles sont plus populaires que les roses!",
+            date: new Date("1675-05-30")
+          }
+        ]
       },
       {
         id: 17,
@@ -183,7 +339,15 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PINK, FlowerColors.PURPLE],
         images: ["../../../assets/flowers/iris/iris.jpg", "../../../assets/flowers/iris/iris2.jpg", "../../../assets/flowers/iris/iris3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Iris Mittenaere",
+            comment: "Quel plaisir d'avoir une aussi belle fleur qui porte mon nom! Je suis très fière de l'iris!",
+            date: new Date("2016-05-30")
+          }
+        ]
       },
       {
         id: 18,
@@ -192,7 +356,21 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PINK, FlowerColors.PURPLE],
         images: ["../../../assets/flowers/lila/lila.jpg", "../../../assets/flowers/lila/lila2.jpg", "../../../assets/flowers/lila/lila3.jpg"],
         saison: [FlowerSeasons.SPRING],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Charles Baudelaire",
+            comment: "Je ne connais pas de fleur plus belle que le lilas. Son parfum est aussi doux que la musique de Debussy.",
+            date: new Date("1863-05-30")
+          },
+          {
+            id: 2,
+            name: "Victor Hugo",
+            comment: "Le lilas est une fleur qui me rappelle mon enfance. Je l'adore!",
+            date: new Date("1869-05-30")
+          }
+        ]
       },
       {
         id: 19,
@@ -201,7 +379,27 @@ export class FlowersService {
         color: [FlowerColors.WHITE, FlowerColors.PINK, FlowerColors.YELLOW],
         images: ["../../../assets/flowers/lys/lys.jpg", "../../../assets/flowers/lys/lys2.jpg", "../../../assets/flowers/lys/lys3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Arthur Rimbaud",
+            comment: "C'est pour moi la fleur qui représente mon amour pour la poésie. Je l'adore!",
+            date: new Date("1863-05-03")
+          },
+          {
+            id: 2,
+            name: "Paul Verlaine",
+            comment: "Arrêtez diantre de m'envoyer des lys! Je ne suis pas un poète romantique!",
+            date: new Date("1863-05-03")
+          },
+          {
+            id: 3,
+            name: "Arthur Rimbaud",
+            comment: "Je t'envoie des lys pour te dire que je t'aime!",
+            date: new Date("1863-05-04")
+          }
+        ]
       },
       {
         id: 20,
@@ -210,7 +408,21 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PINK],
         images: ["../../../assets/flowers/lisianthus/lisianthus.jpg", "../../../assets/flowers/lisianthus/lisianthus2.jpg", "../../../assets/flowers/lisianthus/lisianthus3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Jean de La Fontaine",
+            comment: "Cette plante est une des plus grandes sources de poison. Elle est aussi très toxique pour les animaux.",
+            date: new Date("1668-05-30")
+          },
+          {
+            id: 2,
+            name: "Jean Marie Leclerc de Buffon",
+            comment: "Mais qu'est ce que tu racontes Jean, c'est n'importe quoi!",
+            date: new Date("1749-05-30")
+          }
+        ]
       },
       {
         id: 21,
@@ -219,7 +431,19 @@ export class FlowersService {
         color: [FlowerColors.BLUE, FlowerColors.PINK, FlowerColors.YELLOW, FlowerColors.WHITE],
         images: ["../../../assets/flowers/orchidee/orchidee.jpg", "../../../assets/flowers/orchidee/orchidee2.jpg", "../../../assets/flowers/orchidee/orchidee3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [{
+          id: 1,
+          name: "Marie Curie",
+          comment: "J'adore les orchidées, j'en ai pleins le labo, malheureusement elles meurent toutes des radiations.",
+          date: new Date("1903-05-30")
+        },
+          {
+            id: 2,
+            name: "Pierre Curie",
+            comment: "C'est pas vrai Marie, tu les arroses pas assez!",
+            date: new Date("1903-05-30")
+          }]
       },
       {
         id: 22,
@@ -228,7 +452,32 @@ export class FlowersService {
         color: [FlowerColors.RED, FlowerColors.PINK, FlowerColors.YELLOW],
         images: ["../../../assets/flowers/pivoine/pivoine.jpg", "../../../assets/flowers/pivoine/pivoine2.jpg", "../../../assets/flowers/pivoine/pivoine3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
-        comments: []
+        note: 0,
+        comments: [{
+          id: 1,
+          name: "Albert Einstein",
+          comment: "Ah la pivoine, j'en ai mangé une fois, c'était délicieux!",
+          date: new Date("1905-05-30")
+        },
+          {
+            id: 2,
+            name: "Marie Curie",
+            comment: "C'est pas vrai Albert, tu as mangé une pivoine, c'est une fleur!",
+            date: new Date("1905-05-30")
+          },
+          {
+            id: 3,
+            name: "Albert Einstein",
+            comment: "Oui mais c'était délicieux!",
+            date: new Date("1905-05-30")
+          },
+          {
+            id: 4,
+            name: "Marie Curie",
+            comment: "Quoi ??? Mais tu es fou Albert!",
+            date: new Date("1905-05-30")
+          }
+        ]
       },
       {
         id: 23,
@@ -237,7 +486,21 @@ export class FlowersService {
         color: [FlowerColors.RED, FlowerColors.WHITE],
         images: ["../../../assets/flowers/poinsettia/poinsettia.jpg", "../../../assets/flowers/poinsettia/poinsettia2.jpg", "../../../assets/flowers/poinsettia/poinsettia3.jpg"],
         saison: [FlowerSeasons.AUTUMN, FlowerSeasons.WINTER],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Mohammed Ali",
+            comment: "Quand je vais sur le ring, je me sens comme une poinsettia, fort et beau!",
+            date: new Date("1974-05-30")
+          },
+          {
+            id: 2,
+            name: "Andy Warhol",
+            comment: "Mais Mohammed, qu'est-ce que tu racontes? Tu ne ressembles pas du tout à une poinsettia!",
+            date: new Date("1974-05-30")
+          },
+        ]
       },
       {
         id: 24,
@@ -246,7 +509,15 @@ export class FlowersService {
         color: [FlowerColors.PINK, FlowerColors.WHITE],
         images: ["../../../assets/flowers/protea/protea.jpg", "../../../assets/flowers/protea/protea2.jpg", "../../../assets/flowers/protea/protea3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
-        comments: []
+        note: 0,
+        comments: [
+          {
+            id: 1,
+            name: "Sigmund Freud",
+            comment: "Je suis un grand fan de la protée, je trouve que c'est une fleur très courageuse!",
+            date: new Date("1905-05-30")
+          }
+        ]
       },
     ]
   }
@@ -259,7 +530,7 @@ export class FlowersService {
     // Foreach comment of the flower with the id
     let max = 0;
     for (let comment of this.flowers.find(flower => flower.id === id)!.comments) {
-      if(comment.id < max) {
+      if (comment.id < max) {
         max = comment.id;
       }
     }
@@ -271,10 +542,15 @@ export class FlowersService {
     if (!flower) {
       throw new Error('Flower not found');
     }
-    if(!name || !comment) {
+    if (!name || !comment) {
       throw new Error('Name or comment is empty');
     }
-    this.flowers.find(flower => flower.id === id)!.comments.push({id: this.findAvailibleIDForFlowerComment(id), name: name, comment: comment, date: new Date()});
+    this.flowers.find(flower => flower.id === id)!.comments.push({
+      id: this.findAvailibleIDForFlowerComment(id),
+      name: name,
+      comment: comment,
+      date: new Date()
+    });
   }
 
   getFlowerById(id: number): Flower {

@@ -12,8 +12,12 @@ export class FleursComponent {
   flowers!: Flower[];
   router!: Router;
 
-  constructor(flowerServices: FlowersService, router: Router) {
-    this.flowers = flowerServices.getFlowers();
+  constructor(private flowerServices: FlowersService, router: Router) {
     this.router = router;
   }
+
+  ngOnInit(): void {
+    this.flowers = this.flowerServices.getFlowers();
+  }
+
 }

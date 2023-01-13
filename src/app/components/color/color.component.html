@@ -1,6 +1,6 @@
 <div class="color-card" style="box-shadow: inset 0 0 10px {{ color.color}}, #a6a4a4 0 0 20px;">
-  <h2> <span style="color: {{ color.color}}"> o {{ color.name | uppercase }} </span> </h2>
-  <h4 style="text-decoration: underline; text-decoration-color: {{ color.color}}"> {{ color.emotion }} </h4>
+  <h2> <span [style.color]="color.color"> o {{ color.name | uppercase }} </span> </h2>
+  <h4 style="text-decoration: underline;" [style.text-decoration-color]="color.color"> {{ color.emotion }} </h4>
   {{ color.signification }}
 </div>
 

@@ -5,7 +5,6 @@ import {Flower, FlowerColors, FlowerSeasons} from "../models/flowers";
   providedIn: 'root'
 })
 export class FlowersService {
-
   flowers!: Flower[];
 
   constructor() {
@@ -18,12 +17,13 @@ export class FlowersService {
         images: ["../../../assets/flowers/alstromeria/alstromeria.jpg", "../../../assets/flowers/alstromeria/alstromeria2.jpg", "../../../assets/flowers/alstromeria/alstromeria3.jpg"],
         saison: [FlowerSeasons.SUMMER],
         note: 0,
-        comments: [{
-          id: 1,
-          name: "Marie",
-          comment: "J'adore cette fleur, elle est magnifique !",
-          date: new Date("2022-06-01")
-        },
+        comments: [
+          {
+            id: 1,
+            name: "Marie",
+            comment: "J'adore cette fleur, elle est magnifique !",
+            date: new Date("2022-06-01")
+          },
           {
             id: 3,
             name: "Jean",
@@ -91,12 +91,14 @@ export class FlowersService {
         images: ["../../../assets/flowers/anthurium/anthurium.jpg", "../../../assets/flowers/anthurium/anthurium2.jpg", "../../../assets/flowers/anthurium/anthurium3.jpg"],
         saison: [FlowerSeasons.AUTUMN],
         note: 0,
-        comments: [{
-          id: 1,
-          name: "Tyler Durden",
-          comment: "La premère règle du Fight Club est : vous ne parlez pas de L'Anthurium.",
-          date: new Date("2022-08-08")
-        }]
+        comments: [
+          {
+            id: 1,
+            name: "Tyler Durden",
+            comment: "La premère règle du Fight Club est : vous ne parlez pas de L'Anthurium.",
+            date: new Date("2022-08-08")
+          }
+        ]
       },
       {
         id: 5,

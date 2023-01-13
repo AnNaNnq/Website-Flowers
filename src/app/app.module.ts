@@ -22,6 +22,9 @@ import {FleurComponent} from './components/fleur/fleur.component';
 import {SmallDescPipe} from './pipes/small-desc.pipe';
 import {CommentaireComponent} from './components/commentaire/commentaire.component';
 import {MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import { SearchComponent } from './components/search/search.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -42,13 +45,16 @@ import {MatButtonModule} from "@angular/material/button";
     FleurComponent,
     SmallDescPipe,
     CommentaireComponent,
+    SearchComponent,
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatIconModule,
-        MatButtonModule
+        MatButtonModule,
+        MatInputModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

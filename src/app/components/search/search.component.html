@@ -1,0 +1,14 @@
+<mat-form-field class="search">
+  <mat-label>Rechercher une fleur par son nom</mat-label>
+  <input matInput placeholder="Ex. Le Lys" type="text" name="searchFlower" [(ngModel)]="searchFlower">
+</mat-form-field>
+
+<div class="flowersList">
+  <span *ngFor="let flower of flowers">
+    <span [ngSwitch]="flower.name">
+      <span *ngSwitchCase=[(searchFlower)]>
+        <app-fleur [flower]="flower"></app-fleur>
+      </span>
+    </span>
+  </span>
+</div>

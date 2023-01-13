@@ -115,7 +115,7 @@ export class FlowersService {
       },
       {
         id: 10,
-        name: "La Jonquille (Narcisse)",
+        name: "La Jonquille",
         signification: "La jonquille est un symbole contre le cancer dans d’autre pays. Partout dans le monde, cette fleur universellement élégante est un porte-étendard et elle est synonyme de l’arrivée des beaux jours du printemps avec ses longues tiges et ses belles fleurs jaunes, à peine l’hiver décline-t-il, elle est une des toutes premières à fleurir. Dans le langage des fleurs, la jonquille est porteuse de message d’amour sincère et de désir impatient, elle manifeste une attente galante profonde et qui aimerait être assouvie, mais de façon subtile et voilée, en toute discrétion. Cependant, elle peut aussi être porteuse d’une sorte d’ultimatum qui indique que la personne qui déclare son amour est en attente d’une réponse rapidement ! Soit un amour transi depuis longtemps ou une déclaration soudaine qui nécessite un retour sans attente. La jonquille est donc symbole d’un amour brûlant qui ne demande qu’à vivre sa passion et son désir ! De façon plus générale, la jonquille ou narcisse est un signe de prospérité et de richesse souhaitée à soi-même ou un proche. Elle peut aussi être prise à contre courant et être une représentation de l'égoïsme de la personne qui la reçoit, une sorte de cadeau à double tranchant !",
         color: [FlowerColors.YELLOW],
         images: ["../../../assets/flowers/jonquille/jonquille.jpg", "../../../assets/flowers/jonquille/jonquille2.jpg", "../../../assets/flowers/jonquille/jonquille3.jpg"],

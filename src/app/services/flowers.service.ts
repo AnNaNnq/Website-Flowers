@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
-import {Flower, FlowerColors, FlowerSeasons} from "../models/flowers";
+import {Flower, FlowerColors, FlowerEvents, FlowerSeasons} from "../models/flowers";
 
 @Injectable({
   providedIn: 'root'
 })
 export class FlowersService {
+
   flowers!: Flower[];
 
   constructor() {
@@ -17,13 +18,13 @@ export class FlowersService {
         images: ["../../../assets/flowers/alstromeria/alstromeria.jpg", "../../../assets/flowers/alstromeria/alstromeria2.jpg", "../../../assets/flowers/alstromeria/alstromeria3.jpg"],
         saison: [FlowerSeasons.SUMMER],
         note: 0,
-        comments: [
-          {
-            id: 1,
-            name: "Marie",
-            comment: "J'adore cette fleur, elle est magnifique !",
-            date: new Date("2022-06-01")
-          },
+        events: [FlowerEvents.AMOUR, FlowerEvents.MARRIAGE],
+        comments: [{
+          id: 1,
+          name: "Marie",
+          comment: "J'adore cette fleur, elle est magnifique !",
+          date: new Date("2022-06-01")
+        },
           {
             id: 3,
             name: "Jean",
@@ -51,6 +52,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/amaryllis/amaryllis.jpg", "../../../assets/flowers/amaryllis/amaryllis2.jpg", "../../../assets/flowers/amaryllis/amaryllis3.jpg"],
         saison: [FlowerSeasons.WINTER],
         note: 0,
+        events: [FlowerEvents.ANNIVERSAIRE],
         comments: [
           {
             id: 1,
@@ -68,6 +70,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/anemone/anemone.jpg", "../../../assets/flowers/anemone/anemone2.jpg", "../../../assets/flowers/anemone/anemone3.jpg",],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.FAIRE_PLAISIR, FlowerEvents.DEUIL],
         comments: [
           {
             id: 1,
@@ -91,14 +94,13 @@ export class FlowersService {
         images: ["../../../assets/flowers/anthurium/anthurium.jpg", "../../../assets/flowers/anthurium/anthurium2.jpg", "../../../assets/flowers/anthurium/anthurium3.jpg"],
         saison: [FlowerSeasons.AUTUMN],
         note: 0,
-        comments: [
-          {
-            id: 1,
-            name: "Tyler Durden",
-            comment: "La premère règle du Fight Club est : vous ne parlez pas de L'Anthurium.",
-            date: new Date("2022-08-08")
-          }
-        ]
+        events: [FlowerEvents.AMOUR],
+        comments: [{
+          id: 1,
+          name: "Tyler Durden",
+          comment: "La premère règle du Fight Club est : vous ne parlez pas de L'Anthurium.",
+          date: new Date("2022-08-08")
+        }]
       },
       {
         id: 5,
@@ -108,6 +110,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/aster/aster.jpg", "../../../assets/flowers/aster/aster2.jpg", "../../../assets/flowers/aster/aster3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.ANNIVERSAIRE, FlowerEvents.FAIRE_PLAISIR],
         comments: [{
           id: 1,
           name: "Rambo",
@@ -123,10 +126,11 @@ export class FlowersService {
         images: ["../../../assets/flowers/oiseau_paradis/oiseau_paradis.jpg", "../../../assets/flowers/oiseau_paradis/oiseau_paradis2.jpg", "../../../assets/flowers/oiseau_paradis/oiseau_paradis3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN, FlowerSeasons.WINTER],
         note: 0,
+        events: [FlowerEvents.FAIRE_PLAISIR],
         comments: [{
           id: 1,
           name: "Marc Petitdemange",
-          comment: "C'est l'une des plus belles fleurs que j'ai jamais vu !",
+          comment: "C'est l'une des plus belles fleurs que je n'ai jamais vu !",
           date: new Date("2022-04-08")
         }]
       },
@@ -138,6 +142,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/bouvardia/bouvardia.jpg", "../../../assets/flowers/bouvardia/bouvardia2.jpg", "../../../assets/flowers/bouvardia/bouvardia3.jpg"],
         saison: [FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.NAISSANCE, FlowerEvents.ANNIVERSAIRE, FlowerEvents.FELICITATION, FlowerEvents.MARRIAGE],
         comments: [
           {
             id: 1,
@@ -155,6 +160,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/oeillet/oeillet.jpg", "../../../assets/flowers/oeillet/oeillet2.jpg", "../../../assets/flowers/oeillet/oeillet3.jpg"],
         saison: [FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.FETE_DES_MERES, FlowerEvents.AMOUR, FlowerEvents.FAIRE_PLAISIR, FlowerEvents.DEUIL],
         comments: [{
           id: 1,
           name: "Donald Trump",
@@ -170,6 +176,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/chrysantheme/chrysantheme.jpg", "../../../assets/flowers/chrysantheme/chrysantheme2.jpg", "../../../assets/flowers/chrysantheme/chrysantheme3.jpg"],
         saison: [FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.DEUIL],
         comments: [
           {
             id: 1,
@@ -187,6 +194,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/jonquille/jonquille.jpg", "../../../assets/flowers/jonquille/jonquille2.jpg", "../../../assets/flowers/jonquille/jonquille3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.FETE_DES_MERES, FlowerEvents.MARRIAGE, FlowerEvents.NAISSANCE, FlowerEvents.FAIRE_PLAISIR],
         comments: [
           {
             id: 1,
@@ -204,6 +212,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/delphinium/delphinium.jpg", "../../../assets/flowers/delphinium/delphinium2.jpg", "../../../assets/flowers/delphinium/delphinium3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.AMOUR],
         comments: [
           {
             id: 1,
@@ -227,6 +236,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/freesia/freesia.jpg", "../../../assets/flowers/freesia/freesia2.jpg", "../../../assets/flowers/freesia/freesia3.jpg"],
         saison: [FlowerSeasons.WINTER],
         note: 0,
+        events: [FlowerEvents.REMERCIEMENTS],
         comments: [
           {
             id: 1,
@@ -244,6 +254,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/glaieul/glaieul.jpg", "../../../assets/flowers/glaieul/glaieul2.jpg", "../../../assets/flowers/glaieul/glaieul3.jpg"],
         saison: [FlowerSeasons.AUTUMN, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.AMOUR],
         comments: [
           {
             id: 1,
@@ -273,6 +284,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/bruyere/bruyere.jpg", "../../../assets/flowers/bruyere/bruyere2.jpg", "../../../assets/flowers/bruyere/bruyere3.jpg"],
         saison: [FlowerSeasons.WINTER, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.AMOUR, FlowerEvents.FETE_DES_MERES],
         comments: [
           {
             id: 1,
@@ -308,6 +320,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/jacinthe/jacinthe.jpg", "../../../assets/flowers/jacinthe/jacinthe2.jpg", "../../../assets/flowers/jacinthe/jacinthe3.jpg"],
         saison: [FlowerSeasons.SPRING],
         note: 0,
+        events: [FlowerEvents.REMERCIEMENTS, FlowerEvents.AMOUR],
         comments: [
           {
             id: 1,
@@ -325,6 +338,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/hydrangeas/hydrangeas.jpg", "../../../assets/flowers/hydrangeas/hydrangeas2.jpg", "../../../assets/flowers/hydrangeas/hydrangeas3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.FETE_DES_MERES, FlowerEvents.AMOUR, FlowerEvents.FAIRE_PLAISIR],
         comments: [
           {
             id: 1,
@@ -342,6 +356,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/iris/iris.jpg", "../../../assets/flowers/iris/iris2.jpg", "../../../assets/flowers/iris/iris3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.AMOUR, FlowerEvents.MARRIAGE, FlowerEvents.FAIRE_PLAISIR],
         comments: [
           {
             id: 1,
@@ -359,6 +374,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/lila/lila.jpg", "../../../assets/flowers/lila/lila2.jpg", "../../../assets/flowers/lila/lila3.jpg"],
         saison: [FlowerSeasons.SPRING],
         note: 0,
+        events: [FlowerEvents.AMOUR],
         comments: [
           {
             id: 1,
@@ -382,6 +398,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/lys/lys.jpg", "../../../assets/flowers/lys/lys2.jpg", "../../../assets/flowers/lys/lys3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.DEUIL, FlowerEvents.AMOUR, FlowerEvents.NAISSANCE, FlowerEvents.MARRIAGE],
         comments: [
           {
             id: 1,
@@ -411,6 +428,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/lisianthus/lisianthus.jpg", "../../../assets/flowers/lisianthus/lisianthus2.jpg", "../../../assets/flowers/lisianthus/lisianthus3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.AMOUR, FlowerEvents.FAIRE_PLAISIR, FlowerEvents.MARRIAGE, FlowerEvents.ANNIVERSAIRE, FlowerEvents.REMERCIEMENTS, FlowerEvents.FELICITATION],
         comments: [
           {
             id: 1,
@@ -434,18 +452,21 @@ export class FlowersService {
         images: ["../../../assets/flowers/orchidee/orchidee.jpg", "../../../assets/flowers/orchidee/orchidee2.jpg", "../../../assets/flowers/orchidee/orchidee3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.AUTUMN],
         note: 0,
-        comments: [{
-          id: 1,
-          name: "Marie Curie",
-          comment: "J'adore les orchidées, j'en ai pleins le labo, malheureusement elles meurent toutes des radiations.",
-          date: new Date("1903-05-30")
-        },
+        events: [FlowerEvents.AMOUR, FlowerEvents.MARRIAGE],
+        comments: [
+          {
+            id: 1,
+            name: "Marie Curie",
+            comment: "J'adore les orchidées, j'en ai pleins le labo, malheureusement elles meurent toutes des radiations.",
+            date: new Date("1903-05-30")
+          },
           {
             id: 2,
             name: "Pierre Curie",
             comment: "C'est pas vrai Marie, tu les arroses pas assez!",
             date: new Date("1903-05-30")
-          }]
+          }
+        ]
       },
       {
         id: 22,
@@ -455,6 +476,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/pivoine/pivoine.jpg", "../../../assets/flowers/pivoine/pivoine2.jpg", "../../../assets/flowers/pivoine/pivoine3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER],
         note: 0,
+        events: [FlowerEvents.AMOUR, FlowerEvents.ANNIVERSAIRE, FlowerEvents.FAIRE_PLAISIR],
         comments: [{
           id: 1,
           name: "Albert Einstein",
@@ -489,6 +511,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/poinsettia/poinsettia.jpg", "../../../assets/flowers/poinsettia/poinsettia2.jpg", "../../../assets/flowers/poinsettia/poinsettia3.jpg"],
         saison: [FlowerSeasons.AUTUMN, FlowerSeasons.WINTER],
         note: 0,
+        events: [FlowerEvents.MARRIAGE, FlowerEvents.FAIRE_PLAISIR],
         comments: [
           {
             id: 1,
@@ -512,6 +535,7 @@ export class FlowersService {
         images: ["../../../assets/flowers/protea/protea.jpg", "../../../assets/flowers/protea/protea2.jpg", "../../../assets/flowers/protea/protea3.jpg"],
         saison: [FlowerSeasons.SPRING, FlowerSeasons.SUMMER, FlowerSeasons.AUTUMN],
         note: 0,
+        events: [FlowerEvents.AMOUR, FlowerEvents.MARRIAGE],
         comments: [
           {
             id: 1,
@@ -561,5 +585,31 @@ export class FlowersService {
       throw new Error('Flower not found');
     }
     return flower;
+  }
+
+  getAllFlowerEvents() {
+    return Object.values(FlowerEvents);
+  }
+
+  getAllFlowersForAnEvent(event: FlowerEvents) {
+    console.log(this.flowers.filter(flower => flower.events!.includes(event)));
+    return this.flowers.filter(flower => flower.events!.includes(event));
+  }
+
+  getFlowersBySeason(season: string): Flower[] {
+    if(season == 'Printemps'){
+      return this.flowers.filter(flower => flower.saison.find(element => element == FlowerSeasons.SPRING));
+    }
+    if(season == 'Été'){
+      return this.flowers.filter(flower => flower.saison.find(element => element == FlowerSeasons.SUMMER));
+    }
+    if(season == 'Hiver'){
+      return this.flowers.filter(flower => flower.saison.find(element => element == FlowerSeasons.WINTER));
+    }
+    if(season == 'Automne'){
+      return this.flowers.filter(flower => flower.saison.find(element => element == FlowerSeasons.AUTUMN));
+    }else{
+      return this.flowers;
+    }
   }
 }

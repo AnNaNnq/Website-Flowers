@@ -6,10 +6,11 @@
   align-content: center;
 }
 
-button {
-  width: 100%;
+a {
+  width: 70%;
   margin: 5px;
-  padding: 30px 150px;
+  text-align: center;
+  padding: 30px 0;
   background-color: white;
   border: 2px solid $color-main;
   border-radius: 8px;
@@ -21,4 +22,3 @@ button {
     cursor: pointer;
   }
 }
-

@@ -9,6 +9,7 @@ export interface Flower {
   comments: Comment[];
   note: number;
   voteUtilisateur?: number;
+  events: FlowerEvents[];
 }
 
 export enum FlowerColors {
@@ -29,4 +30,16 @@ export enum FlowerSeasons {
   SPRING = 'Printemps',
   SUMMER = 'Été',
   AUTUMN = 'Automne'
+}
+
+export enum FlowerEvents {
+  MARRIAGE="Mariage",
+  NAISSANCE="Naissance",
+  AMOUR="Amour",
+  DEUIL="Deuil",
+  FELICITATION="Félicitation",
+  ANNIVERSAIRE="Anniversaire",
+  FETE_DES_MERES="Fête des mères",
+  FAIRE_PLAISIR="Faire plaisir",
+  REMERCIEMENTS="Remerciements",
 }

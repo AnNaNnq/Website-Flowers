@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Flower } from "../../models/flowers";
+import {FlowersService} from "../../services/flowers.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-saison-detail',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./saison-detail.component.scss']
 })
 export class SaisonDetailComponent {
+  flowers!: Flower[];
+
+  constructor(private flowerServices: FlowersService,
+              private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    const season = this.route.snapshot.params['id'];
+    this.flowers = this.flowerServices.getFlowersBySeason(season);
+  }
 
 }

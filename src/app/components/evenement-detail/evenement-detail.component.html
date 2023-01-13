@@ -1,1 +1,11 @@
-<p>evenement-detail works!</p>
+<h3 class="eventTitle">Fleurs pour {{ event }}</h3>
+<div class="back" (click)="goBack()">← Retour</div>
+
+<div class="flowersList">
+  <app-fleur *ngFor="let flower of flowers" [flower]="flower"></app-fleur>
+  <h3 class="noComment" *ngIf="flowers.length == 0">Nous n'avons malheureusement pas de fleurs à vous proposer pour cet évènement.</h3>
+</div>
+
+<a href="evenements/{{ event }}#top" id="scroll_to_top" mat-fab>
+  <mat-icon> arrow_upward</mat-icon>
+</a>

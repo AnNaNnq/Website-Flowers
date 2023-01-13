@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
   {path: 'accueil', component: LandingPageComponent}, // Anna
   {path: 'evenements', component: EvenementsComponent}, // Anton
-  {path: 'evenements/:id', component: EvenementDetailComponent}, // Loïc
+  {path: 'evenements/:event', component: EvenementDetailComponent}, // Loïc
   {path: 'saisons', component: SaisonsComponent}, // Anton
   {path: 'saisons/:id', component: SaisonDetailComponent}, // Anton
   {path: 'fleurs', component: FleursComponent}, // Loïc

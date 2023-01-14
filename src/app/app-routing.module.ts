@@ -10,7 +10,6 @@ import {FleurDetailComponent} from "./components/fleur-detail/fleur-detail.compo
 import {ContactComponent} from "./components/contact/contact.component";
 import {ForumComponent} from "./components/forum/forum.component";
 import {ColorsListComponent} from "./components/colors-list/colors-list.component";
-import {SearchComponent} from "./components/search/search.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
@@ -24,7 +23,6 @@ const routes: Routes = [
   {path: 'contacts', component: ContactComponent}, // Anton
   {path: 'couleurs', component: ColorsListComponent}, // Anna
   {path: 'forum', component: ForumComponent}, // Anna
-  {path: 'recherche', component: SearchComponent}, // Anna
 ];
 
 @NgModule({

@@ -52,6 +52,10 @@
     color: #565656;
     padding-left: 1em;
   }
+
+  & h2 {
+    margin: 0;
+  }
 }
 
 .commentairesHeaderLine {
@@ -139,6 +143,10 @@ hr {
       background-color: $color-main-hover-light;
     }
   }
+}
+
+app-carousel {
+  width: 100%;
 }
 
 

@@ -17,7 +17,7 @@ img {
   display: flex;
   flex-direction: column;
   border-radius: 0.3rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.8rem;
   border: 1px solid #e0e0e0;
@@ -46,6 +46,29 @@ img {
     transition-duration: 0.3s;
     &:hover {
       color: $color-main;
+    }
+  }
+}
+
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  & span {
+    margin: 0 0.5rem;
+    padding: 0.5em 1em;
+    background-color: $color-main;
+    color: white;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-color: $color-main-hover-light;
+      color: white !important;
     }
   }
 }

@@ -9,6 +9,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./fleurs.component.scss']
 })
 export class FleursComponent {
+  searchFlower!: string;
   flowers!: Flower[];
   router!: Router;
 

@@ -9,7 +9,7 @@ export class EventIconPipe implements PipeTransform {
   transform(value: FlowerEvents, ...args: unknown[]): unknown {
     switch (value) {
       case FlowerEvents.MARRIAGE:
-        return 'favorite';
+        return 'supervisor_account';
       case FlowerEvents.NAISSANCE:
         return 'child_friendly';
       case FlowerEvents.AMOUR:

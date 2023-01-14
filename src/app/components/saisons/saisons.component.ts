@@ -20,7 +20,6 @@ export class SaisonsComponent {
   ngOnInit(): void {
     this.seasons = this.flowersService.getAllFlowerSeasons();
     this.saison = this.route.snapshot.params['name'];
-    console.log(this.saison);
     if(!this.saison){
       this.saison = FlowerSeasons.SPRING;
     }
@@ -48,7 +47,5 @@ export class SaisonsComponent {
   onImageChanged(carouselImage: CarouselImage) {
     this.saison = carouselImage.title as FlowerSeasons;
     this.flowers = this.flowersService.getFlowersBySeason(this.saison);
-
-    console.log(console.log(carouselImage));
   }
 }

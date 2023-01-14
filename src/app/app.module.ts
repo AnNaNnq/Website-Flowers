@@ -1,5 +1,9 @@
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+
+// Traduction FR
+import localeFr from '@angular/common/locales/fr';
+import {registerLocaleData} from "@angular/common";
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -30,6 +34,9 @@ import {SaisonWidgetComponent} from './components/widgets/saison-widget/saison-w
 import {SeasonIconPipe} from './pipes/season-icon.pipe';
 import {CouleurWidgetComponent} from './components/widgets/couleur-widget/couleur-widget.component';
 import {ColorForIconPipe} from './pipes/color-for-icon.pipe';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
@@ -62,12 +69,13 @@ import {ColorForIconPipe} from './pipes/color-for-icon.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatSnackBarModule,
     MatButtonModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'fr-FR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule {

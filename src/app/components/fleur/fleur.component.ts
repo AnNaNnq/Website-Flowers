@@ -16,7 +16,6 @@ export class FleurComponent {
   }
 
   clickCard() {
-    console.log('clickCard');
     this.router.navigateByUrl('fleurs/' + this.flower.id);
   }
 }

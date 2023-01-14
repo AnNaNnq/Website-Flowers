@@ -836,7 +836,6 @@ export class FlowersService {
   }
 
   getAllFlowersForAnEvent(event: FlowerEvents) {
-    console.log(this.flowers.filter(flower => flower.events!.includes(event)));
     return this.flowers.filter(flower => flower.events!.includes(event));
   }
 

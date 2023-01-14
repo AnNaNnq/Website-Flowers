@@ -34,7 +34,6 @@ export class FleurDetailComponent {
     } else {
       this.flowerService.addComment(id, title, comment);
       this.toggleWriteCommentSection();
-      console.log(this.flower.comments);
     }
   }
 }

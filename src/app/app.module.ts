@@ -25,7 +25,13 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import { SearchComponent } from './components/search/search.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and-down-widget.component';
+import { UpAndDownWidgetComponent } from './components/widgets/up-and-down-widget/up-and-down-widget.component';
+import { EventsWidgetComponent } from './components/widgets/events-widget/events-widget.component';
+import { EventIconPipe } from './pipes/event-icon.pipe';
+import { SaisonWidgetComponent } from './components/widgets/saison-widget/saison-widget.component';
+import { SeasonIconPipe } from './pipes/season-icon.pipe';
+import { CouleurWidgetComponent } from './components/widgets/couleur-widget/couleur-widget.component';
+import { ColorForIconPipe } from './pipes/color-for-icon.pipe';
 
 @NgModule({
   declarations: [
@@ -48,6 +54,12 @@ import { UpAndDownWidgetComponent } from './components/up-and-down-widget/up-and
     CommentaireComponent,
     SearchComponent,
     UpAndDownWidgetComponent,
+    EventsWidgetComponent,
+    EventIconPipe,
+    SaisonWidgetComponent,
+    SeasonIconPipe,
+    CouleurWidgetComponent,
+    ColorForIconPipe,
   ],
   imports: [
     BrowserModule,

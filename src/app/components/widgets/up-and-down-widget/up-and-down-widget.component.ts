@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Flower} from "../../models/flowers";
+import {Flower} from "../../../models/flowers";
 
 @Component({
   selector: 'app-up-and-down-widget',

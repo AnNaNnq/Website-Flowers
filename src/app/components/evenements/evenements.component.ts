@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {FlowersService} from "../../services/flowers.service";
 import {FlowerEvents} from "../../models/flowers";
 import {Router} from "@angular/router";
+import {CarouselImage} from "../../models/carousel";
 
 @Component({
   selector: 'app-evenements',

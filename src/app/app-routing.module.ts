@@ -4,7 +4,6 @@ import {LandingPageComponent} from "./components/landing-page/landing-page.compo
 import {EvenementsComponent} from "./components/evenements/evenements.component";
 import {EvenementDetailComponent} from "./components/evenement-detail/evenement-detail.component";
 import {SaisonsComponent} from "./components/saisons/saisons.component";
-import {SaisonDetailComponent} from "./components/saison-detail/saison-detail.component";
 import {FleursComponent} from "./components/fleurs/fleurs.component";
 import {FleurDetailComponent} from "./components/fleur-detail/fleur-detail.component";
 import {ContactComponent} from "./components/contact/contact.component";
@@ -13,16 +12,16 @@ import {ColorsListComponent} from "./components/colors-list/colors-list.componen
 
 const routes: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
-  {path: 'accueil', component: LandingPageComponent}, // Anna
-  {path: 'evenements', component: EvenementsComponent}, // Anton
-  {path: 'evenements/:event', component: EvenementDetailComponent}, // Loïc
-  {path: 'saisons', component: SaisonsComponent}, // Anton
-  {path: 'saisons/:id', component: SaisonDetailComponent}, // Anton
-  {path: 'fleurs', component: FleursComponent}, // Loïc
-  {path: 'fleurs/:id', component: FleurDetailComponent}, //Loïc
-  {path: 'contacts', component: ContactComponent}, // Anton
-  {path: 'couleurs', component: ColorsListComponent}, // Anna
-  {path: 'forum', component: ForumComponent}, // Anna
+  {path: 'accueil', component: LandingPageComponent},
+  {path: 'evenements', component: EvenementsComponent},
+  {path: 'evenements/:event', component: EvenementDetailComponent},
+  {path: 'saisons', component: SaisonsComponent},
+  {path: 'saisons/:name', component: SaisonsComponent},
+  {path: 'fleurs', component: FleursComponent},
+  {path: 'fleurs/:id', component: FleurDetailComponent},
+  {path: 'contacts', component: ContactComponent},
+  {path: 'couleurs', component: ColorsListComponent},
+  {path: 'forum', component: ForumComponent},
 ];
 
 @NgModule({

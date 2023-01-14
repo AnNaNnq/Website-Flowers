@@ -1,10 +1,11 @@
 import {Comment} from "./comments";
+import {CarouselImage} from "./carousel";
 export interface Flower {
   id: number;
   name: string;
   color: FlowerColors[];
   signification: string;
-  images: string[];
+  images: CarouselImage[];
   saison: FlowerSeasons[];
   comments: Comment[];
   note: number;
@@ -26,10 +27,10 @@ export enum FlowerColors {
 }
 
 export enum FlowerSeasons {
-  WINTER = 'Hiver',
   SPRING = 'Printemps',
   SUMMER = 'Été',
-  AUTUMN = 'Automne'
+  AUTUMN = 'Automne',
+  WINTER = 'Hiver',
 }
 
 export enum FlowerEvents {

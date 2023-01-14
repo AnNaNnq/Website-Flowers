@@ -1,4 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {CarouselImage} from "../../models/carousel";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-carousel',
@@ -6,16 +8,22 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  @Input() images!: string[];
+  @Input() carouselImages!: CarouselImage[];
+
+  @Input() firstImage!: string;
+  @Output() onImageChanged = new EventEmitter<CarouselImage>();
   imageCount!: number;
   carouselIndex!: number;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
-    this.imageCount = this.images.length;
+    this.imageCount = this.carouselImages.length;
     this.carouselIndex = 0;
+    if(this.firstImage) {
+      this.carouselIndex = this.carouselImages.findIndex(image => image.title === this.firstImage);
+    }
   }
 
   onPreviousClicked() {
@@ -24,6 +32,7 @@ export class CarouselComponent {
     } else {
       this.carouselIndex = this.imageCount - 1;
     }
+    this.onImageChanged.emit(this.carouselImages[this.carouselIndex]);
   }
 
   onNextClicked() {
@@ -32,5 +41,7 @@ export class CarouselComponent {
     } else {
       this.carouselIndex = 0;
     }
+
+    this.onImageChanged.emit(this.carouselImages[this.carouselIndex]);
   }
 }

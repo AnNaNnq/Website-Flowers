@@ -1,6 +1,6 @@
-<div class="container">
-  <button (click)="toSeason('Printemps')">Printemps</button>
-  <button (click)="toSeason('Été')">Été</button>
-  <button (click)="toSeason('Automne')">Automne</button>
-  <button (click)="toSeason('Hiver')">Hiver</button>
+<h1 class="saison">{{ saison }}</h1>
+<p class="explication">Pour afficher les fleurs pour une saison, il vous suffit de choisir l'image correspondant à la saison via le carousel.</p>
+<app-carousel (onImageChanged)="onImageChanged($event)" [firstImage]="saison" [carouselImages]="carouselImages"></app-carousel>
+<div class="flowersList">
+  <app-fleur *ngFor="let flower of flowers" [flower]="flower"></app-fleur>
 </div>

@@ -8,7 +8,6 @@ import {LandingPageComponent} from './components/landing-page/landing-page.compo
 import {EvenementsComponent} from './components/evenements/evenements.component';
 import {EvenementDetailComponent} from './components/evenement-detail/evenement-detail.component';
 import {SaisonsComponent} from './components/saisons/saisons.component';
-import {SaisonDetailComponent} from './components/saison-detail/saison-detail.component';
 import {FleurDetailComponent} from './components/fleur-detail/fleur-detail.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {ForumComponent} from './components/forum/forum.component';
@@ -40,7 +39,6 @@ import {ColorForIconPipe} from './pipes/color-for-icon.pipe';
     EvenementsComponent,
     EvenementDetailComponent,
     SaisonsComponent,
-    SaisonDetailComponent,
     FleurDetailComponent,
     ContactComponent,
     ForumComponent,

@@ -1,6 +1,7 @@
 @import "../../../assets/scss/couleurs.scss";
 
   img {
+    object-fit: cover;
     @media screen and (min-width: 768px) {
       width: 20vw;
       height: 20vw;

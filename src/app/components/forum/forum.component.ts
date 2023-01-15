@@ -23,13 +23,13 @@ export class ForumComponent {
       name: [null, [Validators.required]],
       comment: [null, [Validators.required]]
     }, {
-      updateOn: 'blur'
+      updateOn: 'change'
     });
     this.comments = this.commentsService.getAllComments();
   }
 
   onSubmitForm() {
     this.commentsService.rajouterCommentaire(this.nouveauCommentaireFormulaire.value);
-    this.router.navigateByUrl('/forum');
+    this.nouveauCommentaireFormulaire.reset();
   }
 }

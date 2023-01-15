@@ -2,7 +2,6 @@
   <div class="carte-formulaire">
     <h2> Votre Commentaire </h2>
     <form [formGroup]="nouveauCommentaireFormulaire">
-
       <div class="donnee-formulaire">
         <input id="name" placeholder="Votre nom" type="text" formControlName="name">
       </div>
@@ -15,7 +14,7 @@
         <span class="message-erreur"> Veuillez compléter tous les champs.</span>
       </div>
       <div>
-        <button type="submit" (click)="onSubmitForm()" [disabled]="nouveauCommentaireFormulaire.invalid"> Envoyer le commentaire
+        <button type="submit" class="sendForm" (click)="onSubmitForm()" [disabled]="nouveauCommentaireFormulaire.invalid"> Envoyer le commentaire
         </button>
       </div>
     </form>

@@ -1,5 +1,9 @@
-<div class="container">
-  <a (click)="navigateToEvent(evenement)" *ngFor="let evenement of evenements">{{evenement}}</a>
+<div class ="container">
+  <div class="card" (click)="navigateToEvent(evenement)" *ngFor="let evenement of evenements">
+    <h1>{{evenement}}</h1>
+    <img src="./assets/evenements/{{evenement}}.png" alt="une image"/>
+  </div>
 </div>
+
 
 

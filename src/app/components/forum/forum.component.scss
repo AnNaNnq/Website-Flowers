@@ -26,7 +26,7 @@
   height: 10%;
   margin: 5px;
   padding: 10px 30px;
-  box-shadow: #b6b5b5 4px 4px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
   @media screen and (max-width: 768px) {
     width: 85%;
   }
@@ -34,16 +34,22 @@
 
 h2 {
   font-size: 2.3em;
-  margin: 10px 0 0 12px;
+  margin: 10px 0 20px 12px;
 }
 
 /***************************** Organiser les champs d'entrée de l'utilisateur *****************************/
 .donnee-formulaire {
-  margin: 10px 0;
-  width: 100%;
+  margin: 10px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  & input, textarea {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 /***************************** Donner une jolie apparance au bouton *****************************/

@@ -1,0 +1,57 @@
+@import "../fleurs/fleurs.component.scss";
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  background-color: #fdfcfc;
+  margin: 2em;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  width: 15em;
+}
+
+th {
+  border: 1px solid black;
+  padding: 10px;
+  width: 3em;
+  color: $color-main;
+}
+
+.card-with-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  &image {
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+
+.card-article {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  margin: 2em;
+  padding: 3%;
+  font-size: large;
+}
+
+h1 {
+  color: #222;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+  &:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px $color-main, 0 0 25px $color-main, 0 0 50px $color-main, 0 0 100px $color-main;
+  }
+}

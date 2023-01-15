@@ -9,6 +9,17 @@ em {
   color: $color-main;
 }
 
+h3 {
+  font-size: 5em;
+  margin: 0.8em 0;
+  text-align: center;
+  font-family: 'Garden', serif;
+  @media screen and (max-width: 768px) {
+    line-height: 1em;
+    font-size: 3em;
+  }
+}
+
 table {
   border-collapse: collapse;
   background-color: #fdfcfc;

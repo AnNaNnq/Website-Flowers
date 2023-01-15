@@ -1,7 +1,7 @@
 <div class="carousel">
   <img [src]="carouselImages[carouselIndex].src"/>
   <div class="imageTitleContainer">
-  <span class="imageTitle">{{carouselImages[carouselIndex].title}}</span>
+  <span class="imageTitle" *ngIf="carouselImages[carouselIndex].title">{{carouselImages[carouselIndex].title}}</span>
   </div>
   <div class="controls">
     <div class="goPrevious" (click)="onPreviousClicked()"><mat-icon>keyboard_arrow_left</mat-icon></div>

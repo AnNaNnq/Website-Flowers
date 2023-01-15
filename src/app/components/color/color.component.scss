@@ -4,6 +4,12 @@
 }
 
 /***************************** Apparence des cartes pour les couleurs  *****************************/
+.color-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .color-card {
   width: 90%;
   transition: 0.8s;

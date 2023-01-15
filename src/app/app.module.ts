@@ -35,6 +35,7 @@ import {SeasonIconPipe} from './pipes/season-icon.pipe';
 import {CouleurWidgetComponent} from './components/widgets/couleur-widget/couleur-widget.component';
 import {ColorForIconPipe} from './pipes/color-for-icon.pipe';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FooterComponent } from './components/footer/footer.component';
 
 registerLocaleData(localeFr);
 
@@ -63,6 +64,7 @@ registerLocaleData(localeFr);
     SeasonIconPipe,
     CouleurWidgetComponent,
     ColorForIconPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

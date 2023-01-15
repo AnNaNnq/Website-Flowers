@@ -2,7 +2,7 @@
 
 <h2> Rechercher </h2>
 <mat-form-field class="search">
-  <mat-label> Rechercher une fleur par son nom </mat-label>
+  <mat-label> Rechercher une fleur par son nom</mat-label>
   <input matInput placeholder="Ex. Le Lys" type="text" name="searchFlower" [(ngModel)]="searchFlower" #search>
 </mat-form-field>
 
@@ -11,7 +11,9 @@
     <span [ngSwitch]="flower.name">
       <span *ngSwitchCase=[(searchFlower)]>
         <h2> La fleur que nous avons trouvé : </h2>
+        <div class="flowersList">
         <app-fleur [flower]="flower"></app-fleur>
+        </div>
       </span>
     </span>
   </span>

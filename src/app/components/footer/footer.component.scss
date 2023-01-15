@@ -1,0 +1,97 @@
+@import "../../../assets/scss/couleurs.scss";
+@font-face {
+  font-family: 'Garden';
+  src: url('../../../assets/fonts/flower.ttf');
+}
+
+.wave {
+  padding-top: 2rem;
+  position: relative;
+  bottom: -2em;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+}
+.footerFlexContainer {
+  text-align: center;
+  display: flex;
+  min-height: 180px;
+  background-color: #212536;
+  color: white;
+  padding-bottom: 2em;
+
+  flex-direction: row;
+  & > div {
+    width: 33.33%;
+  }
+
+  @media screen and (max-width: 768px) {
+    & > div {
+      width: 100%;
+      padding-top: 1rem;
+    }
+    flex-direction: column;
+  }
+
+  & .contenuGauche {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & span {
+      color: $color-main-lighter;
+      font-family: 'Garden', serif;
+      font-size: 4em;
+      line-height: 1.35em;
+    }
+  }
+
+  & .contenuMilieu {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .contact {
+      padding: 1rem 2rem;
+      background-color: $color-main;
+      border-radius: 3rem;
+      transition-duration: 0.5s;
+      cursor: pointer;
+      border: 1px white solid;
+      &:hover {
+        background-color: $color-main-lighter;
+      }
+    }
+  }
+
+  & .contenuDroite {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      flex: 1 0 33.33%;
+      transition-duration: 0.8s;
+      cursor: pointer;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 2rem 0;
+        flex: 1 0 100%;
+      }
+
+      &:hover {
+        background-color: $color-main;
+        border-radius: 5rem;
+      }
+    }
+  }
+}

@@ -1,7 +1,16 @@
 @import "../../../assets/scss/couleurs.scss";
 
 @import "../../../assets/scss/couleurs.scss";
+.flowersListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .flowersList {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

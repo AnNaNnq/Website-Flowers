@@ -78,11 +78,19 @@ nav {
     }
 
     & div mat-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: 0.3em;
-      padding: 0.3em;
+      margin-top: 0.6rem;
+      padding: 0.15em 0.2em;
       transform: scale(1.2);
       border: 1px solid #e0e0e0;
       border-radius: 0.3em;
+      cursor: pointer;transition-duration: 0.4s;
+      &:hover {
+        background-color: #e0e0e0;
+      }
     }
   }
 
